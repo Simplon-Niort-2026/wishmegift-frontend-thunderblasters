@@ -1,0 +1,12 @@
+.burger-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-family: var(--font-text);
+        font-size: 1.2rem;
+        @media (min-width: 769px) {
+            display: none;
+        }
+        
+}
