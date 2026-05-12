@@ -56,7 +56,9 @@
 }
 
 body {
-  margin: 0;
+  background-image: url("/images/bg-img-naissance.webp");
+  background-position: center;
+  height: 100svh;
 }
 
 h1,
