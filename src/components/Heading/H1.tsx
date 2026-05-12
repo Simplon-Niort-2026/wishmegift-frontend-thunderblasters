@@ -1,6 +1,6 @@
 type Props = {
     className? : string;
-    children: string;
+    children: React.ReactNode;
 }
 
 export default function H1({className, children}: Props) {
