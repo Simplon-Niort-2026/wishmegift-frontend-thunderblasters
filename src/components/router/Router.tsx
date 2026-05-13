@@ -1,5 +1,5 @@
 import { useEffect, useState, type JSX } from "react";
-import ListPage from "../pages/ListPage";
+import WishlistPage from "../pages/WishlistPage";
 import GiftPage from "../pages/GiftPage";
 import Loading from "../loading/Loading";
 import NotFound from "../notFound/NotFound";
@@ -34,7 +34,7 @@ export default function Router(){
         if(loading){
             switch(pathname){
                 case "/":
-                    setPage(<ListPage />);
+                    setPage(<WishlistPage />);
                     setLoading(false);
                     break;
 

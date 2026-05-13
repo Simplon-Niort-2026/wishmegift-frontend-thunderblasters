@@ -1,0 +1,35 @@
+.listCard {
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    padding: var(--padding-small);
+
+    & img {
+        width: 150px;
+        aspect-ratio: 1;
+        
+    }
+}
+
+.description-container {
+    padding: var(--padding-small);
+
+}
+
+.giftList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-small);
+    gap: 1rem;
+}
+
+.content {
+    margin: 10px;
+    color: brown;
+}
+
+.description {
+    color: black;
+}
+

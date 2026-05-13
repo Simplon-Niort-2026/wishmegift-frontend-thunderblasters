@@ -1,15 +1,16 @@
 import React from "react";
-type prop ={
-    className? : String;
+import "./h2.css";
+type Props ={
+    className? : string;
     children : React.ReactNode;  
 }
 
 
-export default function H2({className, children} :prop ){
+export default function H2({className, children} :Props ){
     return(
-        <H2 className={className && className}>
+        <h2 className={className && className}>
            {children} 
-        </H2>
+        </h2>
 
     )
 

@@ -19,12 +19,12 @@
 
 .container{
   border-radius: var(--radius-medium);
+}
 
-  & .bg-light{
-    background-color: var(--primary-light);
-  }
+.bg-light{
+  background-color: var(--primary-light);
+}
 
-  & .bg-lighter{
-    background-color: var(--primary-lighter);
-  }
+.bg-lighter{
+  background-color: var(--primary-lighter);
 }
