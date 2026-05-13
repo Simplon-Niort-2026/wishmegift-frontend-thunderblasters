@@ -3,6 +3,7 @@ import ListPage from "../pages/ListPage";
 import GiftPage from "../pages/GiftPage";
 import Loading from "../loading/Loading";
 import NotFound from "../notFound/NotFound";
+import { giftPageRegex, listPageRegex } from "../../configurations/navigation.config";
 
 
 /**
@@ -32,32 +33,18 @@ export default function Router(){
       */
     useEffect(()=>{
         if(loading){
-            switch(pathname){
-                case "/":
+            switch(true){
+                case listPageRegex.test(pathname!):
                     setPage(<ListPage />);
                     setLoading(false);
                     break;
 
-                case "/gift/1":
-                    setPage(<GiftPage id={1}/>);
+                case giftPageRegex.test(pathname!):
+                    const id = pathname?.match(giftPageRegex)![1] || "4";
+                    setPage(<GiftPage id={Number(id)}/>);
                     setLoading(false);
                     break;
-
-                case "/gift/2":
-                    setPage(<GiftPage id={2}/>);
-                    setLoading(false);
-                    break;
-
-                case "/gift/3":
-                    setPage(<GiftPage id={3}/>);
-                    setLoading(false);
-                    break;
-                
-                case "/gift/4":
-                    setPage(<GiftPage id={4}/>);
-                    setLoading(false);
-                    break;
-
+              
                 default:
                     setPage(<NotFound />);
                     setLoading(false);
