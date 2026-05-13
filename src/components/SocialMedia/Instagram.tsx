@@ -1,7 +1,6 @@
 import Image from "../images/Image";
 
 
-
 export default function Instagram(){
 
     return(

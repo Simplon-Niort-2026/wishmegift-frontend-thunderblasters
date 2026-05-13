@@ -1,4 +1,3 @@
-import Image from "../images/Image";
 import Instagram from "./Instagram";
 import Tiktok from "./Tiktok";
 import Twitter from "./Twitter";
