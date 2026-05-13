@@ -1,6 +1,6 @@
 header {
     background-color: var(--primary-color);
-    padding: var(--padding-medium);
+    padding: var(--padding-small) var(--padding-medium);
     display: flex;
     align-items: center;
     justify-content: space-between;

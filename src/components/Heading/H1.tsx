@@ -1,3 +1,5 @@
+import "./h1.css";
+
 type Props = {
     className? : string;
     children: React.ReactNode;

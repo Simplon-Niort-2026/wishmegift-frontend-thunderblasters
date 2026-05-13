@@ -1,14 +1,14 @@
 
 import './App.css'
-import H1 from './components/Heading/H1'
 import Layout from './components/layout/Layout'
+import Router from './components/router/Router'
 
 function App() {
 
   return (
     <>
       <Layout>
-        <H1>TITRE</H1>
+        <Router />
       </Layout>
     </>
   )

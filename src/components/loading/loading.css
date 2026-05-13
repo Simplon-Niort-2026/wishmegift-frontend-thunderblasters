@@ -1,0 +1,16 @@
+
+@keyframes rotate {
+    to{transform: rotate(360deg);}
+}
+
+.loading{
+    --border: 1px solid black;
+    aspect-ratio: 1;
+    width: 4rem;
+    border-radius: 100%;
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+    animation: rotate 1s linear infinite;
+    margin: auto;
+}
