@@ -1,0 +1,17 @@
+.not-found{
+    gap: 2rem;
+    align-items: center;
+    padding: var(--padding-big);
+    align-items: center;
+
+    & span{
+        font-size: 2rem;
+    }
+
+    & a{
+        border: 2px solid var(--primary-color);
+        padding: var(--padding-small) var(--padding-medium);
+        border-radius: var(--radius-medium);
+        background-color: white;        
+    }
+}

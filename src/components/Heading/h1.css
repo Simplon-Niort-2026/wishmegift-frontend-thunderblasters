@@ -1,0 +1,7 @@
+h1{
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    padding: var(--padding-medium) 0;
+}
