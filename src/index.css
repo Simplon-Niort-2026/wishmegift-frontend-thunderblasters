@@ -64,6 +64,10 @@ body {
   height: 100svh;
 }
 
+main{
+  flex-grow: 2;
+}
+
 button, a {
   font-family: var(--font-text);
 }
