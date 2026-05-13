@@ -1,5 +1,5 @@
 import { useEffect, useState, type JSX } from "react";
-import ListPage from "../pages/ListPage";
+import WishlistPag from "../pages/WishlistPage";
 import GiftPage from "../pages/GiftPage";
 import Loading from "../loading/Loading";
 import NotFound from "../notFound/NotFound";
@@ -35,7 +35,7 @@ export default function Router(){
         if(loading){
             switch(true){
                 case listPageRegex.test(pathname!):
-                    setPage(<ListPage />);
+                    setPage(<WishlistPag />);
                     setLoading(false);
                     break;
 
