@@ -11,7 +11,6 @@ export default function() {
             <Logo />
             <BurgerMenu />
             <Nav />
-            <GiftList />
         </header>
     )
 }
