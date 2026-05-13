@@ -37,9 +37,24 @@ export default function Router(){
                     setPage(<ListPage />);
                     setLoading(false);
                     break;
+
+                case "/gift/1":
+                    setPage(<GiftPage id={1}/>);
+                    setLoading(false);
+                    break;
+
+                case "/gift/2":
+                    setPage(<GiftPage id={2}/>);
+                    setLoading(false);
+                    break;
+
+                case "/gift/3":
+                    setPage(<GiftPage id={3}/>);
+                    setLoading(false);
+                    break;
                 
                 case "/gift/4":
-                    setPage(<GiftPage />);
+                    setPage(<GiftPage id={4}/>);
                     setLoading(false);
                     break;
 
