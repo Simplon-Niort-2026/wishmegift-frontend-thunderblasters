@@ -2,6 +2,7 @@ import './header.css';
 import Logo from '../logo/Logo';
 import Nav from '../nav/Nav';
 import BurgerMenu from '../buttons/BurgerMenu';
+import GiftList from '../lists/GiftList';
 
 export default function() {
     
@@ -10,6 +11,7 @@ export default function() {
             <Logo />
             <BurgerMenu />
             <Nav />
+            <GiftList />
         </header>
     )
 }

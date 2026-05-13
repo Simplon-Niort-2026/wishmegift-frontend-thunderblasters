@@ -1,6 +1,6 @@
 import Button from "./Button"
 import { IoMenu } from "react-icons/io5"
-import './burgerMenu.css';
+import './burgerMenu.css'
 
 export default function BurgerMenu() {
     const displayMenu = () => {

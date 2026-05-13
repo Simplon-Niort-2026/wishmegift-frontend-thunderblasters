@@ -1,9 +1,7 @@
-type Props = {
-    src: string;
-    alt: string;
-}
+import type { ImageType } from "../../types/type"
 
-export default function Image({ src, alt }: Props) {
+
+export default function Image({ src, alt }: ImageType) {
 
     return (
         <img src={src} alt={alt} loading="lazy"/>
