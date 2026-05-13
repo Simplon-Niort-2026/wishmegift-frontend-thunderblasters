@@ -8,7 +8,12 @@ import "./wishlistcard.css"
 export default function WishListCard() {
     const wishlist = db.findList();
     const giftList = wishlist.gifts;
-    const giftImg = giftList.map(gift => gift.img)
+    const gifts = giftList.map(gift => {
+        return {
+            ... gift.img,
+            id: gift.id
+        }
+    })
     return (
         
         <ColumnContainer className="listCard bg-light column">
@@ -17,7 +22,7 @@ export default function WishListCard() {
             <p className="content">{wishlist.createAt}</p>
             <ColumnContainer className="description-container bg-lighter ">
                 <p className="content description">{wishlist.description}</p>
-                <List className="giftList" array={giftImg}/>
+                <List className="giftList" array={gifts}/>
             </ColumnContainer>
         </ColumnContainer>
         

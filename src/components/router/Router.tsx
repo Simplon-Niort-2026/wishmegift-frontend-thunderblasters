@@ -33,8 +33,8 @@ export default function Router(){
       */
     useEffect(()=>{
         if(loading){
-            switch(pathname){
-                case "/":
+            switch(true){
+                case listPageRegex.test(pathname!):
                     setPage(<WishlistPage />);
                     setLoading(false);
                     break;
