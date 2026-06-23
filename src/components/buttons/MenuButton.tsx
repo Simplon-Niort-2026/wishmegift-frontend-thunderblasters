@@ -1,12 +1,14 @@
 import Button from '../buttons/Button';
 
 
-export default function MenuButton() {
-    const displayMenu = () => {
-        return alert("Afficher le menu");
-    }
+type Props = {
+    callback: ()=> void
+}
+
+export default function MenuButton({ callback }: Props) {
+   
     return (
-        <Button className='menu-btn' onClick={displayMenu}>
+        <Button className='menu-btn' onClick={callback}>
             Menu
         </Button>
     )
