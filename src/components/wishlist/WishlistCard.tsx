@@ -1,6 +1,6 @@
 import { db } from "../../services/databaseMocked"
 import ColumnContainer from "../containers/ColumnContainer";
-import H2 from "../heading/H2";
+import H2 from "../Heading/H2";
 import List from "../lists/List";
 import "./wishlistcard.css"
 

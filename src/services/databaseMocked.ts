@@ -1,7 +1,4 @@
 
-
-
-
 const gift1 = {
     id: 1,
     title: "Coffret bleu",
