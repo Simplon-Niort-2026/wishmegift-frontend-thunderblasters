@@ -1,5 +1,5 @@
 
-import H1 from "../Heading/H1";
+import H1 from "../heading/H1";
 import WishListCard from "../wishlist/WishlistCard";
 
 
