@@ -17,23 +17,23 @@ import { giftPageRegex, listPageRegex } from "../../configurations/navigation.co
  * On affiche un composant en fonction du chemin (pathname) dans l'url
  */
 
-export default function Router(){
+export default function Router() {
 
     const [pathname] = useState<string | undefined>(window.location.pathname);
     const [page, setPage] = useState<JSX.Element>();
     const [loading, setLoading] = useState(true);
-    
 
-    
-     /**
-      * le useEffect est un hook qui permet ici de modifier la variable 'page' (ligne 22)
-      * Si je l'avais modifier en dehors du useEffect, cela n'aurait eu aucun effet car
-      * une fois le composant rendu et affiché, il ne se modifie que si on change son état.
-      * et pour ça on passe par des hooks.
-      */
-    useEffect(()=>{
-        if(loading){
-            switch(true){
+
+
+    /**
+     * le useEffect est un hook qui permet ici de modifier la variable 'page' (ligne 22)
+     * Si je l'avais modifier en dehors du useEffect, cela n'aurait eu aucun effet car
+     * une fois le composant rendu et affiché, il ne se modifie que si on change son état.
+     * et pour ça on passe par des hooks.
+     */
+    useEffect(() => {
+        if (loading) {
+            switch (true) {
                 case listPageRegex.test(pathname!):
                     setPage(<WishlistPage />);
                     setLoading(false);
@@ -41,20 +41,20 @@ export default function Router(){
 
                 case giftPageRegex.test(pathname!):
                     const id = pathname?.match(giftPageRegex)![1] || "4";
-                    setPage(<GiftPage id={Number(id)}/>);
+                    setPage(<GiftPage id={Number(id)} />);
                     setLoading(false);
                     break;
-              
+
                 default:
                     setPage(<NotFound />);
                     setLoading(false);
             }
         }
     }, [loading, setPage, setLoading])
-    
-    
+
+
     return (
-        loading ? <Loading/> : page
+        loading ? <Loading /> : page
     )
 
 }
