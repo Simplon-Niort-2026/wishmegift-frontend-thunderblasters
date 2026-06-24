@@ -1,17 +1,25 @@
+import CloseMenuButton from "../buttons/CloseMenuButton";
 import ColumnContainer from "../containers/ColumnContainer";
 import H2 from "../heading/H2";
 import Link from "../links/Link";
+import "./menu.css";
 
-export default function Menu() {
+type Props = {
+    toggleMenu: () => void;
+}
+
+
+export default function Menu({toggleMenu}: Props) {
 
     return (
-        <ColumnContainer className="menu">
-            <H2>DashBoard</H2>
-            <ColumnContainer>
-                <Link href="#">Acceuil</Link>
-                <Link href="#">Mes listes</Link>
-                <Link href="#">Créer une nouvelle liste</Link>
-                <Link href="#">Mes listes à partager</Link>
+        <ColumnContainer className="sidebar">
+            <H2 className="title">DashBoard</H2>
+            <CloseMenuButton callback={toggleMenu} />
+            <ColumnContainer className="menu-link">
+                <Link className="link" href="#">Acceuil</Link>
+                <Link className="link" href="#">Mes listes</Link>
+                <Link className="link" href="#">Créer une nouvelle liste</Link>
+                <Link className="link" href="#">Mes listes à partager</Link>
             </ColumnContainer>
         </ColumnContainer>
     )

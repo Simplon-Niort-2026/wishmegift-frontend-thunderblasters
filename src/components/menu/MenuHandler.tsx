@@ -7,14 +7,14 @@ import Menu from "./Menu";
 export default function MenuHandler() {
     const [displayMenu, SetDisplayMenu] = useState(false);
 
-    const toggleMenu = ()=>{
+    const toggleMenu = () => {
         SetDisplayMenu(!displayMenu);
     }
 
     return(
         <>
         <MenuButton callback={toggleMenu} />
-        { displayMenu && <Menu /> }
+        { displayMenu && <Menu toggleMenu={toggleMenu}/> }
         </>
     )
-}
+} 
