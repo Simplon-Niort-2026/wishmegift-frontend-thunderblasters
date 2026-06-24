@@ -5,6 +5,8 @@ import { db } from "../../services/databaseMocked";
 import "./cardInfo.css";
 import H1 from "../heading/H1";
 import Image from "../images/Image";
+import Link from "../links/Link";
+import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 
 function reserved() {
     alert('afficher le Vous avez réservé.');
@@ -19,6 +21,7 @@ export default function CardInfo({ id }: Props) {
     return (
         <ColumnContainer className="cardInfo">
 
+            <Link href="/" aria-label="retour à la page d'accueil"><FaRegArrowAltCircleLeft size={30} /></Link>
             <H1>{gift.title}</H1>
 
             <div className="cardLayout">
