@@ -64,7 +64,7 @@
 body {
   background-image: url("/images/bg-img-naissance.webp");
   background-position: center;
-  height: 100svh;
+  height: 100%;
 }
 
 main{
@@ -72,6 +72,8 @@ main{
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-bottom: 50px;
+
 }
 
 button, a {

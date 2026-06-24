@@ -1,11 +1,11 @@
 import DisconnectButton from "../buttons/DisconnectButton";
-import MenuButton from "../buttons/MenuButton";
+import MenuHandler from "../menu/MenuHandler";
 import './nav.css';
 
 export default function Nav() {
     return (
         <nav>
-            <MenuButton />
+            <MenuHandler />
             <DisconnectButton />
         </nav>
     )

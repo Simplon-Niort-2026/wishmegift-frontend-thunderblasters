@@ -17,7 +17,7 @@ export default function List({ className, array }: Props) {
         <li key={element}>{element}</li> 
         :
         <li key={element.id}>
-            <Link href={`/gift/${element.id}`} title="voir plus de détail">
+            <Link href={`/gift/${element.id}`} title="voir plus de détails">
                 <Image src={element.src} alt={element.alt}/>
             </Link>
         </li>
