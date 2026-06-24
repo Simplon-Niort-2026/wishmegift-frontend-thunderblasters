@@ -10,7 +10,7 @@ export default function WishListCard() {
     const giftList = wishlist.gifts;
     const gifts = giftList.map(gift => {
         return {
-            ... gift.img,
+            ...gift.img,
             id: gift.id
         }
     })
