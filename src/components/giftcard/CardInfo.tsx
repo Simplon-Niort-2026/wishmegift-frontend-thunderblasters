@@ -6,7 +6,7 @@ import "./cardInfo.css";
 import H1 from "../heading/H1";
 import Image from "../images/Image";
 
-export function reserved() {
+function reserved() {
     alert('afficher le Vous avez réservé.');
 }
 
