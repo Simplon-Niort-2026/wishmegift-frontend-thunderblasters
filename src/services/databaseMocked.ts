@@ -42,7 +42,7 @@ const gift3 = {
     price: 99,
     more: "#",
     img:{
-        src: "./images/cadeau-coffret-sophie-girafe.webp",
+        src: "/images/cadeau-coffret-sophie-girafe.webp",
         alt: "description coffret Sophie"
     }
 }
@@ -60,7 +60,7 @@ const gift4 = {
     price: 89,
     more: "#",
     img:{
-        src: "./images/cadeau-parc.webp",
+        src: "/images/cadeau-parc.webp",
         alt: "description du parc"
     }
 }
